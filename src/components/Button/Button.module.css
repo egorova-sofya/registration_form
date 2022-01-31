@@ -1,0 +1,56 @@
+.button {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  width: 40%;
+  height: 40px;
+  border-radius: 5px;
+  transition: all 200ms;
+}
+
+@media screen and (max-width: 950px) {
+  .button {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .button:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.button:active {
+  transform: scale(0.9);
+}
+
+.primary {
+  background-color: var(--primary);
+  color: #fff;
+}
+
+.primary:hover {
+  background-color: #009b90;
+}
+
+.primary:focus {
+  outline: none;
+  background-color: #009b90;
+}
+
+.secondary {
+  border: 2px solid var(--black);
+}
+
+.secondary:hover {
+  border: 2px solid var(--primaryDark);
+  color: var(--primaryDark);
+}
+
+.secondary:focus {
+  outline: none;
+  border: 2px solid var(--primaryDark);
+  color: var(--primaryDark);
+}
